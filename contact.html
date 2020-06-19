@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contato - Web Design Express</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Wheres My Name?">
+	<meta name="description" content="Site description">
+	<meta name="keywords" content="key,words">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="center flex _fixed">
+			<div class="logo _w50"><a href="index.html"><h2>Danki.Code</h2></a></div><!--Logo-->
+			<nav class="menu-desktop _w50">
+				<ul>
+					<li><a href="index.html">Home</a></li><!--Home-->
+					<li><a href="about.html">Sobre</a></li><!--Sobre-->
+					<li><a class="selected" class="selected" href="contact.html">Contato</a></li><!--Contato-->
+				</ul><!--Lista de Links-->
+			</nav><!--Menu Desktop-->
+
+			<nav class="menu-mobile _w50">
+				<h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
+				<ul class="_w100">
+					<li><a href="index.html">Home</a></li><!--Home-->
+					<li><a href="about.html">Sobre</a></li><!--Sobre-->
+					<li><a class="selected" href="contact.html">Contato</a></li><!--Contato-->
+				</ul><!--Lista de Links-->
+			</nav><!--Menu Mobile-->		
+		</div><!--Centralização-->
+	</header><!--Cabeçalho-->
+
+
+	<footer class="footer1">
+		<div class="center flex">
+			<div class="footer1__single">
+				<h2 class="footer1__single--title">Onde Estamos?</h2>
+				<p class="footer1__single--text"><i class="fa fa-map-pin"></i> Rua Desembargador F. Bastos</p>
+				<p class="footer1__single--text"><i class="fa fa-phone"></i> (48) 91234-5678</p>
+			</div><!--Elemento do Rodapé-->
+			<div class="footer1__single">
+				<h2 class="footer1__single--title">Links Úteis</h2>
+				<a class="footer1__single--link" href="">Danki.Code</a>
+				<a class="footer1__single--link" href="">Google</a>
+			</div><!--Elemento do Rodapé-->
+			<div class="footer1__single">
+				<h2 class="footer1__single--title">Mídias Sociais</h2>
+				<div class="footer1__single--icons">
+					<a class="footer1__single--link" href="#"><i class="fa fa-facebook-official"></i></a>
+					<a class="footer1__single--link" href="#"><i class="fa fa-instagram"></i></a>
+				</div><!--Icones Mídias Sociais-->
+			</div><!--Elemento do Rodapé-->
+		</div><!--Centralização-->		
+	</footer><!--Primeiro Rodapé da Página-->
+
+	<footer class="footer2">
+		<h4>Todos os direitos reservados</h4>
+	</footer><!--Segundo Rodapé da Página-->	
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><!--JQuery-->
+	<script title="" type="text/javascript">
+		$('nav.menu-mobile h2').click(function function_name() {
+			$('nav.menu-mobile ul').slideToggle();
+		});		
+	</script><!--Evento Menu Mobile-->	
+</body>
+</html>
