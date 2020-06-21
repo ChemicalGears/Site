@@ -7,9 +7,14 @@ html, body{width: 100%; height: 100%;}
 
 .flex{width: 100%; display: flex;}
 
-._w100{width: 100%;}
-._w50{width: 50%;}
+
 ._w33{width: 33.3%;}
+._w40{width: 40%;}
+._w50{width: 50%;}
+._w60{width: 60%;}
+._w100{width: 100%;}
+
+
 /*========================*/
 
 /*===Upper Line===*/
@@ -288,7 +293,7 @@ header .flex{
 	margin-left: -4px;
 }
 
-input:focus{outline: 0;}
+.home__newsletter--form input:focus{outline: 0;}
 
 /*=========================*/
 
@@ -496,6 +501,115 @@ input:focus{outline: 0;}
 
 /*=====================*/
 
+/*===Contact Banner===*/
+.contact__banner .center{
+	position: relative;
+	z-index: 2;
+}
+
+.contact__banner--title{
+	color: #52AAA7FF;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.contact__banner--text{
+	padding: 20px 20%;
+	color: #FFFFFFFF;
+	font-size: 15px;
+
+}
+
+.contact__banner--overlay{
+	width: 100%;
+	height: 100%;
+	background-color: #00000099;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/*====================*/
+
+/*===Contact Contato===*/
+.contact__contact{
+	padding: 20px 0;
+}
+
+.contact__contact--form{
+	padding: 0 25px;
+}
+
+.contact__contact--form-title{
+	padding: 5px 0;
+	color: #707070;
+	background-color: #E3E3E3FF;
+	border-left: 5px solid #BFBFBFFF; 
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;    
+}
+
+.contact__contact--form-element{
+	padding: 10px 20px;
+}
+
+.contact__contact--form-element input[type=text],
+.contact__contact--form-element input[type=email]{
+	width: 100%;
+	height: 40px;
+	padding-left: 5px;
+}
+
+.contact__contact--form-element textarea{
+	width: 100%;
+	height: 200px;
+	padding: 15px;
+	resize: none;
+}
+
+.contact__contact--form-element input[type=submit]{
+	padding: 10px 30px;
+	color: #ffffffff;
+	background-color: #52AAA7FF;
+	border: 0;
+	font-size: 20px;
+}
+
+.contact__contact--form-element input[type=submit]:hover{
+	background-color: #397471FF;
+}
+
+.contact__contact--social{
+	padding: 0 60px;	
+}
+
+.contact__contact--social h2{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.contact__contact--social p{
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.contact__contact--social-single{
+	padding: 5px 0;
+}
+
+.contact__contact--social-single p{
+	padding: 10px 20px;
+	color: #ffffffff;
+	background-color: #52AAA7FF;
+	font-size: 18px;
+}
+
+
+/*=====================*/
+
 /*===Rodapé===*/
 
 .footer1{
@@ -559,7 +673,7 @@ input:focus{outline: 0;}
 
 	/*===Classes Auxiliares===*/
 	.flex:not(._fixed){flex-direction: column;}
-	._w33, ._w50, ._w100{
+	._w33, ._w40, ._w50, ._w60,._w100{
 		width: 100%;
 	}
 
@@ -640,6 +754,27 @@ input:focus{outline: 0;}
 	.about__story--day_image{
 		padding-right: 0;
 	}
+	/*=====================*/
+
+	/*===Contact Contato===*/
+
+	.contact__contact--form{
+		text-align: center;
+	}
+
+	.contact__contact--form-element{
+		padding: 5px;
+	}
+
+	.contact__contact--social{
+		padding: 0 25px;
+		margin: 10px 0;
+	}
+
+	.contact__contact--social{
+		text-align: center;
+	}
+
 	/*=====================*/	
 
 	/*===Footer===*/
@@ -649,4 +784,8 @@ input:focus{outline: 0;}
 		text-align: center;
 	}
 	/*============*/
+}
+
+@media screen and (max-width: 500px) {
+	.contact__contact--form form > .flex{flex-direction: column;}
 }
